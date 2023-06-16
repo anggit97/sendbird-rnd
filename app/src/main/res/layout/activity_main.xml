@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_current_user_logged_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="User Login Saat ini: " />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_connect_user_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Connect User 1 (anggittest)" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_connect_user_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Connect User 2 (soju)" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_connect_user_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Connect User 3 (yuya)" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_disconnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Disconnect User" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginVertical="16dp"
+        android:background="@color/black" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_create_channel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Create Channel To User 2 (INITIAL)" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginVertical="16dp"
+        android:background="@color/black" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_open_list_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Lihat List User" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_open_list_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Lihat List Chat" />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
