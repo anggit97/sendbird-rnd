@@ -164,7 +164,11 @@ class ChatDetailActivity : AppCompatActivity() {
                     Log.d(TAG, "onCacheResult: $cachedList")
                     cachedList?.let {
                         adapter.setItems(it)
-                        binding.recyclerViewChat.smoothScrollToPosition(adapter.itemCount - 1)
+                        try {
+                            binding.recyclerViewChat.smoothScrollToPosition(adapter.itemCount - 1)
+                        } catch (e: Exception) {
+                            e.printStackTrace()
+                        }
                     }
                 }
 
@@ -176,7 +180,11 @@ class ChatDetailActivity : AppCompatActivity() {
                     Log.d(TAG, "onApiResult: $apiResultList")
                     apiResultList?.let {
                         adapter.setItems(it)
-                        binding.recyclerViewChat.smoothScrollToPosition(adapter.itemCount - 1)
+                        try {
+                            binding.recyclerViewChat.smoothScrollToPosition(adapter.itemCount - 1)
+                        } catch (e: Exception) {
+                            e.printStackTrace()
+                        }
                     }
                 }
             }
